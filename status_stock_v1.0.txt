@@ -1,0 +1,65 @@
+ACCOUNTING SYATEM  issue-credit  recieve-debit
+
+account payments all
+---------------------
+* credit(eyaala apita denna thiyana payment)
+* debit(api eyalata denna thiyana payment)
+* balance(account eke eyalage ithuru balance eka)
+
+
+normal status
+---------------------
+* 1 - Available
+* 0 - Delete / Returned
+
+Return Stock
+---------------------
+* 0 - deleted
+* 1 - pending to return
+* 2 - returned to seller
+
+damage stock
+---------------------
+* 0 - deleted
+* 1 - pending
+* 2 - sended to customer
+
+payment status
+---------------------
+* 0 - returned by user
+* 1 - paid and available
+
+cheque type status
+---------------------
+# out cheques 
+
+* 0 - returned
+* 1 - paid and released
+* 2 - OD
+
+# in cheques
+
+* 0 - returned
+* 1 - cheque payd by customer to us(payment compleated without credit)PD
+* 2 - deposited to bank
+
+payment type order in paymentType table
+-----------------------------------------
+
+* 1 - CREDIT
+* 2 - CASH
+* 3 - CHEQUE
+* 4 - BANK DEPOSIT
+
+hold invoice type
+------------------------------------------
+*1-on hold
+*2-invoiced
+*3-Deliverd
+
+PO type
+------------------------------------------
+*1-on Active
+*2-Deleted
+*3-OK ALL RECIVED
+

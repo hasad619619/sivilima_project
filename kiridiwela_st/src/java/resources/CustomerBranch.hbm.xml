@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 31, 2020 10:35:31 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="resources.CustomerBranch" table="customer_branch" catalog="kird" optimistic-lock="version">
+        <id name="idcustomerBranch" type="java.lang.Integer">
+            <column name="idcustomer_branch" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="account" class="resources.Account" fetch="select">
+            <column name="account_idaccount" not-null="true" />
+        </many-to-one>
+        <many-to-one name="branch" class="resources.Branch" fetch="select">
+            <column name="branch_idbranch" not-null="true" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

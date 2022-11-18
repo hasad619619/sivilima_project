@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 31, 2020 10:35:31 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="resources.TextList" table="text_list" catalog="kird" optimistic-lock="version">
+        <id name="idtextList" type="java.lang.Integer">
+            <column name="idtext_list" />
+            <generator class="identity" />
+        </id>
+        <property name="test" type="string">
+            <column name="test" length="150" />
+        </property>
+    </class>
+</hibernate-mapping>
